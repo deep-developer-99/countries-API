@@ -1,0 +1,53 @@
+.shimmer {
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+.back-button {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 60px;
+}
+
+.flag-shimmer {
+  width: 500px;
+  height: 300px;
+}
+
+.title-shimmer {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.text-shimmer {
+  width: 300px;
+  height: 20px;
+  margin-bottom: 20px;
+}
